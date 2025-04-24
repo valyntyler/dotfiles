@@ -4,6 +4,8 @@ vim.g.mapleader = ' '
 vim.o.nu = true
 vim.o.rnu = true
 
+vim.o.signcolumn = "yes"
+
 vim.o.tabstop = 2       -- number of columns occupied by a tab
 vim.o.softtabstop = 2   -- see multiple spaces as tabstops so <BS> does the right thing
 vim.o.expandtab = true  -- converts tabs to white space
