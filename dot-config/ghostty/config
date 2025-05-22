@@ -23,6 +23,8 @@ keybind = performable:ctrl+shift+a=select_all
 keybind = performable:ctrl+l=clear_screen
 
 keybind = alt+n=new_split:auto
+keybind = alt+shift+h=new_split:down
+keybind = alt+shift+v=new_split:right
 keybind = alt+q=close_surface
 
 keybind = alt+h=goto_split:left
