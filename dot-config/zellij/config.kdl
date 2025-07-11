@@ -45,7 +45,7 @@ keybinds clear-defaults=true {
         bind "Down" { Resize "Down"; }
         bind "Up" { Resize "Up"; }
         bind "Right" { Resize "Right"; }
-        bind "Tab" "t" { ToggleTab; }
+        // bind "Tab" "t" { ToggleTab; }
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0; }
         bind "C" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "e" { EditScrollback; SwitchToMode "locked"; }
