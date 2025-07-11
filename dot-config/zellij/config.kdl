@@ -4,7 +4,6 @@
 keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
-        bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl q" { Quit; }
     }
     normal {
@@ -96,7 +95,6 @@ keybinds clear-defaults=true {
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0; }
     }
     tab {
-        bind "Ctrl t" { SwitchToMode "normal"; }
         bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Ctrl b" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
