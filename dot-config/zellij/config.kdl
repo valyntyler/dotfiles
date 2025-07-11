@@ -18,7 +18,7 @@ keybinds clear-defaults=true {
         bind "l" { MoveFocus "right"; }
         bind "n" { NewPane; SwitchToMode "normal"; }
         bind "p" { SwitchFocus; }
-        bind "Ctrl p" { SwitchToMode "normal"; }
+        bind "Ctrl i" { SwitchToMode "normal"; }
         bind "r" { NewPane "right"; SwitchToMode "normal"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
@@ -170,9 +170,9 @@ keybinds clear-defaults=true {
     shared_except "locked" "session" {
         bind "Ctrl m" { SwitchToMode "session"; }
     }
-    shared_except "locked" "scroll" "search" "tmux" {
-        bind "Ctrl b" { SwitchToMode "tmux"; }
-    }
+    // shared_except "locked" "scroll" "search" "tmux" {
+    //     bind "Ctrl b" { SwitchToMode "tmux"; }
+    // }
     shared_except "locked" "scroll" "search" {
         bind "Ctrl s" { SwitchToMode "scroll"; }
     }
@@ -180,7 +180,7 @@ keybinds clear-defaults=true {
         bind "Ctrl t" { SwitchToMode "tab"; }
     }
     shared_except "locked" "pane" {
-        bind "Ctrl p" { SwitchToMode "pane"; }
+        bind "Ctrl i" { SwitchToMode "pane"; }
     }
     shared_except "locked" "resize" {
         bind "Ctrl n" { SwitchToMode "resize"; }
