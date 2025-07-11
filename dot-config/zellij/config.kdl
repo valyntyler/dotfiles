@@ -6,6 +6,7 @@ keybinds clear-defaults=true {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
     }
     shared_among "locked" "pane" {
+        // Navigation
         bind "Alt h" { MoveFocusOrTab "Left"; }
         bind "Alt l" { MoveFocusOrTab "Right"; }
         bind "Alt j" { MoveFocus "Down"; }
@@ -42,6 +43,7 @@ keybinds clear-defaults=true {
     locked {
         bind "Ctrl b" { SwitchToMode "normal"; }
 
+        // Select Tab
         bind "Alt 1" { GoToTab 1; }
         bind "Alt 2" { GoToTab 2; }
         bind "Alt 3" { GoToTab 3; }
