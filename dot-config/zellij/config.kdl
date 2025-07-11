@@ -3,6 +3,7 @@
 keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
+        bind "Ctrl t" { SwitchToMode "tab"; }
     }
     normal {
         bind "b" { Write 2; SwitchToMode "locked"; }
@@ -66,7 +67,6 @@ keybinds clear-defaults=true {
     pane {
         bind "Ctrl b" { SwitchToMode "locked"; }
         bind "Ctrl p" { SwitchToMode "normal"; }
-        bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl r" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
         bind "Ctrl q" { Quit; }
@@ -118,7 +118,6 @@ keybinds clear-defaults=true {
     resize {
         bind "Ctrl b" { SwitchToMode "locked"; }
         bind "Ctrl p" { SwitchToMode "pane"; }
-        bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl r" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
         bind "Ctrl q" { Quit; }
@@ -136,7 +135,6 @@ keybinds clear-defaults=true {
     }
     scroll {
         bind "Ctrl r" "Ctrl s" "Space" "Enter" { SwitchToMode "locked"; }
-        bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl s" { SwitchToMode "normal"; }
         bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Ctrl q" { Quit; }
@@ -157,7 +155,6 @@ keybinds clear-defaults=true {
         bind "Ctrl o" { SwitchToMode "normal"; }
         bind "Ctrl r" { SwitchToMode "resize"; }
         bind "Ctrl p" { SwitchToMode "pane"; }
-        bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl b" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
         bind "Ctrl q" { Quit; }
