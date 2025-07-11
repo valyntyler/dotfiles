@@ -23,10 +23,6 @@ keybinds clear-defaults=true {
         bind "f" { ToggleFloatingPanes; SwitchToMode "locked"; }
         bind "Alt n" { NewPane; SwitchToMode "locked"; }
         bind "n" { NewTab; SwitchToMode "locked"; }
-        bind "h" { MoveFocusOrTab "Left"; SwitchToMode "locked"; }
-        bind "l" { MoveFocusOrTab "Right"; SwitchToMode "locked"; }
-        bind "j" { MoveFocus "Down"; SwitchToMode "locked"; }
-        bind "k" { MoveFocus "Up"; SwitchToMode "locked"; }
         bind "[" "Alt [" { FocusPreviousPane; }
         bind "]" "Alt [" { FocusNextPane; }
         bind "-" { NewPane "Down"; SwitchToMode "locked"; }
