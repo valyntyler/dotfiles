@@ -1,5 +1,6 @@
 // Generated from https://zellij.dev/old-documentation/keybindings-examples
-// using zellij convert-theme. https://zellij.dev/documentation/migrating-yaml-layouts.html
+// using zellij convert-theme.
+// https://zellij.dev/documentation/migrating-yaml-layouts.html
 keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
