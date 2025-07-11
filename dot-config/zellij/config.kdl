@@ -19,6 +19,7 @@ keybinds clear-defaults=true {
         bind "t" { SwitchToMode "tab"; }
         bind "s" { SwitchToMode "scroll"; }
         bind "o" { SwitchToMode "session"; }
+        bind "h" { SwitchToMode "move"; }
 
         bind "q" { Quit; }
         bind "b" { Write 2; SwitchToMode "locked"; }
@@ -119,6 +120,15 @@ keybinds clear-defaults=true {
         bind "Alt k" "Up" { MoveFocus "Up"; }
         bind "Alt [" { FocusPreviousPane; }
         bind "Alt ]" { FocusNextPane; }
+    }
+    move {
+        bind "h" { MovePane "left"; }
+        bind "j" { MovePane "down"; }
+        bind "k" { MovePane "up"; }
+        bind "l" { MovePane "right"; }
+        bind "n" { MovePane; }
+        bind "p" { MovePaneBackwards; }
+        bind "tab" { MovePane; }
     }
     scroll {
         bind "Ctrl r" "Ctrl s" "Space" "Enter" { SwitchToMode "locked"; }
