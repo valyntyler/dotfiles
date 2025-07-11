@@ -12,14 +12,16 @@ keybinds clear-defaults=true {
         bind "Alt k" { MoveFocus "Up"; }
     }
     normal {
-        bind "q" { Quit; }
-        bind "b" { Write 2; SwitchToMode "locked"; }
-        bind "Ctrl b" "Space" "Enter" { SwitchToMode "locked"; }
+        // Modes
         bind "p" { SwitchToMode "pane"; }
         bind "r" { SwitchToMode "resize"; }
         bind "t" { SwitchToMode "tab"; }
         bind "s" { SwitchToMode "scroll"; }
         bind "o" { SwitchToMode "session"; }
+
+        bind "q" { Quit; }
+        bind "b" { Write 2; SwitchToMode "locked"; }
+        bind "Ctrl b" "Space" "Enter" { SwitchToMode "locked"; }
         bind "f" { ToggleFloatingPanes; SwitchToMode "locked"; }
         bind "Alt n" { NewPane; SwitchToMode "locked"; }
         bind "n" { NewTab; SwitchToMode "locked"; }
