@@ -7,6 +7,7 @@ keybinds clear-defaults=true {
         bind "Ctrl q" { Quit; }
     }
     normal {
+        bind "q" { Quit; }
         bind "b" { Write 2; SwitchToMode "locked"; }
         bind "Ctrl b" "Space" "Enter" { SwitchToMode "locked"; }
         bind "p" { SwitchToMode "pane"; }
