@@ -138,10 +138,6 @@ keybinds clear-defaults=true {
         bind "e" { EditScrollback; SwitchToMode "locked"; }
     }
     session {
-        bind "Ctrl r" { SwitchToMode "resize"; }
-        bind "Ctrl p" { SwitchToMode "pane"; }
-        bind "Ctrl b" "Enter" "Space" { SwitchToMode "locked"; }
-        bind "Ctrl s" { SwitchToMode "scroll"; }
         bind "d" { Detach; }
     }
     RenameTab {
