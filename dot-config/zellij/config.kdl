@@ -4,6 +4,7 @@ keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
         bind "Ctrl t" { SwitchToMode "tab"; }
+        bind "Ctrl q" { Quit; }
     }
     normal {
         bind "b" { Write 2; SwitchToMode "locked"; }
@@ -14,7 +15,6 @@ keybinds clear-defaults=true {
         bind "s" { SwitchToMode "scroll"; }
         bind "o" { SwitchToMode "session"; }
         bind "f" { ToggleFloatingPanes; SwitchToMode "locked"; }
-        bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; SwitchToMode "locked"; }
         bind "N" { NewTab; SwitchToMode "locked"; }
         bind "n" { NewPane; SwitchToMode "locked"; }
@@ -69,7 +69,6 @@ keybinds clear-defaults=true {
         bind "Ctrl p" { SwitchToMode "normal"; }
         bind "Ctrl r" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
-        bind "Ctrl q" { Quit; }
         bind "Alt h" "Left" { MoveFocus "Left"; }
         bind "Alt l" "Right" { MoveFocus "Right"; }
         bind "Alt j" "Down" { MoveFocus "Down"; }
@@ -101,7 +100,6 @@ keybinds clear-defaults=true {
         bind "Ctrl b" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-        bind "Ctrl q" { Quit; }
         bind "Alt [" { FocusPreviousPane; }
         bind "Alt ]" { FocusNextPane; }
         bind "h" { GoToPreviousTab; }
@@ -120,7 +118,6 @@ keybinds clear-defaults=true {
         bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Ctrl r" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
-        bind "Ctrl q" { Quit; }
         bind "h" "Left" { Resize "Left"; }
         bind "j" "Down" { Resize "Down"; }
         bind "k" "Up" { Resize "Up"; }
@@ -137,7 +134,6 @@ keybinds clear-defaults=true {
         bind "Ctrl r" "Ctrl s" "Space" "Enter" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "normal"; }
         bind "Ctrl p" { SwitchToMode "pane"; }
-        bind "Ctrl q" { Quit; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
         bind "Ctrl f" "PageDown" { PageScrollDown; }
@@ -157,7 +153,6 @@ keybinds clear-defaults=true {
         bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Ctrl b" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
-        bind "Ctrl q" { Quit; }
         bind "d" { Detach; }
     }
     RenameTab {
@@ -291,4 +286,3 @@ mouse_mode false
 // The folder in which Zellij will look for themes
 //
 // theme_dir "/path/to/my/theme_dir"
-
