@@ -17,8 +17,7 @@ keybinds clear-defaults=true {
         bind "o" { SwitchToMode "session"; }
         bind "f" { ToggleFloatingPanes; SwitchToMode "locked"; }
         bind "Alt n" { NewPane; SwitchToMode "locked"; }
-        bind "N" { NewTab; SwitchToMode "locked"; }
-        bind "n" { NewPane; SwitchToMode "locked"; }
+        bind "n" { NewTab; SwitchToMode "locked"; }
         bind "h" { MoveFocusOrTab "Left"; SwitchToMode "locked"; }
         bind "l" { MoveFocusOrTab "Right"; SwitchToMode "locked"; }
         bind "j" { MoveFocus "Down"; SwitchToMode "locked"; }
