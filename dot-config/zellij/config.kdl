@@ -23,10 +23,6 @@ keybinds clear-defaults=true {
         bind "l" { MoveFocusOrTab "Right"; SwitchToMode "locked"; }
         bind "j" { MoveFocus "Down"; SwitchToMode "locked"; }
         bind "k" { MoveFocus "Up"; SwitchToMode "locked"; }
-        bind "H" "Alt h" { MoveFocusOrTab "Left"; }
-        bind "L" "Alt l" { MoveFocusOrTab "Right"; }
-        bind "J" "Alt j" { MoveFocus "Down"; }
-        bind "K" "Alt k" { MoveFocus "Up"; }
         bind "[" "Alt [" { FocusPreviousPane; }
         bind "]" "Alt [" { FocusNextPane; }
         bind "-" { NewPane "Down"; SwitchToMode "locked"; }
@@ -52,6 +48,11 @@ keybinds clear-defaults=true {
     }
     locked {
         bind "Ctrl b" { SwitchToMode "normal"; }
+
+        bind "Alt h" { MoveFocusOrTab "Left"; }
+        bind "Alt l" { MoveFocusOrTab "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
 
         bind "Alt 1" { GoToTab 1; }
         bind "Alt 2" { GoToTab 2; }
