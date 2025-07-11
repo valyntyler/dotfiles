@@ -12,6 +12,7 @@ keybinds clear-defaults=true {
         bind "t" { SwitchToMode "tab"; }
         bind "s" { SwitchToMode "scroll"; }
         bind "o" { SwitchToMode "session"; }
+        bind "f" { ToggleFloatingPanes; SwitchToMode "locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; SwitchToMode "locked"; }
         bind "N" { NewTab; SwitchToMode "locked"; }
