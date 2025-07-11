@@ -5,6 +5,12 @@ keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
     }
+    shared_among "locked" "pane" {
+        bind "Alt h" { MoveFocusOrTab "Left"; }
+        bind "Alt l" { MoveFocusOrTab "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+    }
     normal {
         bind "q" { Quit; }
         bind "b" { Write 2; SwitchToMode "locked"; }
@@ -37,11 +43,6 @@ keybinds clear-defaults=true {
     }
     locked {
         bind "Ctrl b" { SwitchToMode "normal"; }
-
-        bind "Alt h" { MoveFocusOrTab "Left"; }
-        bind "Alt l" { MoveFocusOrTab "Right"; }
-        bind "Alt j" { MoveFocus "Down"; }
-        bind "Alt k" { MoveFocus "Up"; }
 
         bind "Alt 1" { GoToTab 1; }
         bind "Alt 2" { GoToTab 2; }
