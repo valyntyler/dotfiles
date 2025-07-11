@@ -108,8 +108,8 @@ keybinds clear-defaults=true {
         bind "l" { GoToNextTab; }
         bind "j" { GoToNextTab; }
         bind "k" { GoToPreviousTab; }
-        bind "n" { NewTab; }
-        bind "x" { CloseTab; }
+        bind "n" { NewTab; SwitchToMode "locked"; }
+        bind "x" { CloseTab; SwitchToMode "locked"; }
         bind "Alt h" { MoveFocus "Left"; }
         bind "Alt l" { MoveFocus "Right"; }
         bind "Alt j" { MoveFocus "Down"; }
