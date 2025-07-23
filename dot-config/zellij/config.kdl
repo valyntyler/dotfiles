@@ -131,21 +131,11 @@ keybinds clear-defaults=true {
         bind "tab" { MovePane; }
     }
     scroll {
-        bind "Ctrl r" "Ctrl s" "Space" "Enter" { SwitchToMode "locked"; }
-        bind "Ctrl s" { SwitchToMode "normal"; }
-        bind "Ctrl p" { SwitchToMode "pane"; }
+        bind "e" { EditScrollback; SwitchToMode "locked"; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
         bind "Ctrl f" "PageDown" { PageScrollDown; }
         bind "Ctrl b" "PageUp" { PageScrollUp; }
-        bind "Alt n" { NewPane; }
-        bind "Alt h" { MoveFocus "Left"; }
-        bind "Alt l" { MoveFocus "Right"; }
-        bind "Alt j" { MoveFocus "Down"; }
-        bind "Alt k" { MoveFocus "Up"; }
-        bind "Alt [" { FocusPreviousPane; }
-        bind "Alt ]" { FocusNextPane; }
-        bind "e" { EditScrollback; SwitchToMode "locked"; }
     }
     session {
         bind "d" { Detach; }
