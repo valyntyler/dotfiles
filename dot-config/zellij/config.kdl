@@ -2,6 +2,12 @@
 // using zellij convert-theme.
 // https://zellij.dev/documentation/migrating-yaml-layouts.html
 keybinds clear-defaults=true {
+    shared {
+        bind "Down" { ScrollDown; }
+        bind "Up" { ScrollUp; }
+        bind "Left" { GoToPreviousTab; }
+        bind "Right" { GoToNextTab; }
+    }
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
     }
@@ -133,8 +139,8 @@ keybinds clear-defaults=true {
     scroll {
         bind "e" { EditScrollback; SwitchToMode "locked"; }
         bind "h" { PageScrollDown; }
-        bind "j" "Down" { ScrollDown; }
-        bind "k" "Up" { ScrollUp; }
+        bind "j" { ScrollDown; }
+        bind "k" { ScrollUp; }
         bind "l" { PageScrollUp; }
         bind "g" { ScrollToTop; }
         bind "G" { ScrollToBottom; }
