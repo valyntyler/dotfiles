@@ -5,8 +5,6 @@ keybinds clear-defaults=true {
     shared {
         bind "Down" { ScrollDown; }
         bind "Up" { ScrollUp; }
-        bind "Left" { GoToPreviousTab; }
-        bind "Right" { GoToNextTab; }
     }
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
