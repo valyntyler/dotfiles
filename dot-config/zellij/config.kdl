@@ -8,7 +8,7 @@ keybinds clear-defaults=true {
     }
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
-        bind "Ctrl b" { SwitchToMode "locked"; }
+        bind "Ctrl a" { SwitchToMode "locked"; }
     }
     shared_among "locked" "pane" {
         // Navigation
@@ -48,7 +48,7 @@ keybinds clear-defaults=true {
         bind "e" { EditScrollback; SwitchToMode "locked"; }
     }
     locked {
-        bind "Ctrl b" { SwitchToMode "normal"; }
+        bind "Ctrl a" { SwitchToMode "normal"; }
 
         // Select Tab
         bind "Alt 1" { GoToTab 1; }
@@ -148,7 +148,7 @@ keybinds clear-defaults=true {
     }
     RenameTab {
         bind "Ctrl r" { SwitchToMode "normal"; }
-        bind ""Ctrl s" "Space" { SwitchToMode "locked"; }
+        bind "Ctrl s" "Space" { SwitchToMode "locked"; }
         bind "Enter" { SwitchToMode "tab"; }
         bind "Esc" { TabNameInput 27; SwitchToMode "tab"; }
         bind "Alt n" { NewPane; }
