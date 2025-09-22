@@ -8,6 +8,7 @@ keybinds clear-defaults=true {
     }
     shared_except "locked" {
         bind "Esc" { Write 2; SwitchToMode "locked"; }
+        bind "Ctrl b" { SwitchToMode "locked"; }
     }
     shared_among "locked" "pane" {
         // Navigation
@@ -28,7 +29,7 @@ keybinds clear-defaults=true {
         bind "q" { Quit; }
         bind "d" { Detach; }
         bind "b" { Write 2; SwitchToMode "locked"; }
-        bind "Ctrl b" "Space" "Enter" { SwitchToMode "locked"; }
+        bind "Space" "Enter" { SwitchToMode "locked"; }
         bind "f" { ToggleFloatingPanes; SwitchToMode "locked"; }
         bind "Alt n" { NewPane; SwitchToMode "locked"; }
         bind "n" { NewTab; SwitchToMode "locked"; }
@@ -62,7 +63,6 @@ keybinds clear-defaults=true {
         bind "Alt 0" { GoToTab 10; }
     }
     pane {
-        bind "Ctrl b" { SwitchToMode "locked"; }
         bind "Ctrl p" { SwitchToMode "normal"; }
         bind "Ctrl r" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
@@ -93,7 +93,7 @@ keybinds clear-defaults=true {
     }
     tab {
         bind "Ctrl p" { SwitchToMode "pane"; }
-        bind "Ctrl b" "Enter" "Space" { SwitchToMode "locked"; }
+        bind "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "Alt [" { FocusPreviousPane; }
@@ -110,7 +110,6 @@ keybinds clear-defaults=true {
         bind "Alt k" { MoveFocus "Up"; }
     }
     resize {
-        bind "Ctrl b" { SwitchToMode "locked"; }
         bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Ctrl r" "Enter" "Space" { SwitchToMode "locked"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
@@ -149,7 +148,7 @@ keybinds clear-defaults=true {
     }
     RenameTab {
         bind "Ctrl r" { SwitchToMode "normal"; }
-        bind "Ctrl b" "Ctrl s" "Space" { SwitchToMode "locked"; }
+        bind ""Ctrl s" "Space" { SwitchToMode "locked"; }
         bind "Enter" { SwitchToMode "tab"; }
         bind "Esc" { TabNameInput 27; SwitchToMode "tab"; }
         bind "Alt n" { NewPane; }
